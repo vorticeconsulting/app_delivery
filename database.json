@@ -1,0 +1,11 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "X-Tudo",
+      "price": 29.9,
+      "image": "https://github.com/guilhermeonrails.png",
+      "category": "hamburguer"
+    }
+  ]
+}
