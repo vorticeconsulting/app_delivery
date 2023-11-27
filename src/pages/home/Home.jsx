@@ -24,17 +24,17 @@ export function Home() {
 
           <div className="flex items-center gap-6">
             <Link
-              className="flex items-center justify-center gap-2 bg-yellow-400 text-white w-60 h-16 py-2 rounded-xl shadow-lg text-lg"
+              className="flex items-center justify-center gap-2 bg-yellow-500 text-white w-60 h-16 py-2 rounded-xl shadow-lg text-lg"
               to="/menu"
             >
               Ver Cardápio
             </Link>
 
             <Link
-              className="flex items-center justify-center gap-2 bg-white w-60 h-16  py-2 rounded-xl shadow-lg text-lg hover:bg-yellow-400 transition-colors"
+              className="flex items-center justify-center gap-2 bg-white w-60 h-16  py-2 rounded-xl shadow-lg text-lg hover:bg-yellow-500 transition-colors"
               to="/order"
             >
-              <span className="flex items-center gap-2 bg-yellow-400 p-2 rounded-xl justify-center">
+              <span className="flex items-center gap-2 bg-yellow-500 p-2 rounded-xl justify-center">
                 <FaPhone size={24} color="white" />
               </span>
               (32) 99999-9999

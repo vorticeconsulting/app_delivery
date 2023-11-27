@@ -43,11 +43,11 @@ export function Header() {
       </nav>
 
       <Link
-        className="flex items-center justify-center gap-2 bg-white w-60 px-2 py-4 rounded-xl shadow-lg text-lg hover:bg-yellow-400 transition-colors"
+        className="flex items-center justify-center gap-2 bg-white w-60 px-2 py-4 rounded-xl shadow-lg text-lg hover:bg-yellow-500 transition-colors"
         to="/login"
       >
         Meu Carrinho
-        <span className="relative bg-yellow-400 p-2 rounded-xl flex items-center justify-center">
+        <span className="relative bg-yellow-500 p-2 rounded-xl flex items-center justify-center">
           <FaShoppingBag size={24} />
           <strong className="absolute top-0 right-0 w-6 h-6 flex items-center justify-center -mt-2 -mr-2 text-black text-sm font-base bg-rose-100 rounded-full px-2">
             10
