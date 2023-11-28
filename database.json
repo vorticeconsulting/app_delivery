@@ -4,8 +4,43 @@
       "id": 1,
       "title": "X-Tudo",
       "price": 29.9,
-      "image": "https://github.com/guilhermeonrails.png",
+      "image": "src/assets/cardapio/burguers/burger1.jpg",
       "category": "hamburguer"
+    },
+    {
+      "id": 2,
+      "title": "X-Burguer",
+      "price": 19.9,
+      "image": "src/assets/cardapio/burguers/burger2.jpg",
+      "category": "hamburguer"
+    },
+    {
+      "id": 3,
+      "title": "X-Salada",
+      "price": 19.9,
+      "image": "src/assets/cardapio/burguers/burger3.jpg",
+      "category": "hamburguer"
+    },
+    {
+      "id": 4,
+      "title": "Coca Cola",
+      "price": 9.9,
+      "image": "src/assets/cardapio/bebidas/bebida1.jpg",
+      "category": "bebida"
+    },
+    {
+      "id": 5,
+      "title": "Agua",
+      "price": 9.9,
+      "image": "src/assets/cardapio/bebidas/bebida2.jpg",
+      "category": "bebida"
+    },
+    {
+      "id": 6,
+      "title": "Pizza",
+      "price": 29.9,
+      "image": "src/assets/cardapio/pizzas/pizza1.jpg",
+      "category": "massas"
     }
   ]
 }

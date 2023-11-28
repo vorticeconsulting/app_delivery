@@ -5,8 +5,28 @@ import { FaPhone } from 'react-icons/fa'
 import burguer from '../../assets/burguer.png'
 import { Service } from '../../components/Services'
 import { LinksRedesSocial } from '../../components/LinksRedesSocial'
+import { useState, useEffect } from 'react'
+import { api } from '../../lib/axios'
+import { ListProducts } from './components/ListProducts'
+import { BeerBottle, Hamburger, Pizza } from 'phosphor-react'
 
 export function Home() {
+  const [products, setProducts] = useState([])
+  const [categories, setCategories] = useState('hamburguer')
+
+  async function fetchProducts() {
+    const response = await api.get('/products')
+    setProducts(response.data)
+  }
+
+  function handleCategory(category) {
+    setCategories(category)
+  }
+
+  useEffect(() => {
+    fetchProducts()
+  }, [])
+
   return (
     <main className="flex-1">
       <section className="flex justify-between mt-40">
@@ -79,13 +99,36 @@ export function Home() {
       </section>
 
       {/* section cardapio home */}
-      <section className="mt-60">
+      <section className="my-60">
         <h3 className="text-center tracking-wider text-yellow-500 text-2xl font-semibold">
           Cardápio
         </h3>
         <h2 className="text-center text-4xl font-bold mt-6">
           Conheça o nosso cardápio
         </h2>
+
+        <div className="flex justify-center gap-4 my-20">
+          <button
+            className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-lg hover:bg-yellow-500 font-bold text-lg"
+            onClick={() => handleCategory('hamburguer')}
+          >
+            <Hamburger size={24} /> Hamburguer
+          </button>
+          <button
+            className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-lg hover:bg-yellow-500 font-bold text-lg"
+            onClick={() => handleCategory('massas')}
+          >
+            <Pizza size={24} /> Pizza
+          </button>
+          <button
+            className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-lg hover:bg-yellow-500 font-bold text-lg"
+            onClick={() => handleCategory('bebida')}
+          >
+            <BeerBottle size={24} /> Bebidas
+          </button>
+        </div>
+
+        <ListProducts product={products} categoryFilter={categories} />
       </section>
     </main>
   )
