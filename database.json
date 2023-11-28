@@ -41,6 +41,35 @@
       "price": 29.9,
       "image": "src/assets/cardapio/pizzas/pizza1.jpg",
       "category": "massas"
+    },
+    {
+      "id": 7,
+      "title": "Calabresa",
+      "price": 19.9,
+      "image": "src/assets/cardapio/pizzas/pizza2.jpg",
+      "category": "massas"
+    },
+    {
+      
+      "id": 8,
+      "title": "Quatro Queijos",
+      "price": 19.9,
+      "image": "src/assets/cardapio/pizzas/pizza3.jpg",
+      "category": "massas"
+    },
+    {
+      "id": 9,
+      "title": "Coca Cola",
+      "price": 9.9,
+      "image": "src/assets/cardapio/bebidas/bebida10.jpg",
+      "category": "bebida"
+    },
+    {
+      "id": 10,
+      "title": "Agua",
+      "price": 9.9,
+      "image": "src/assets/cardapio/bebidas/bebida11.jpg",
+      "category": "bebida"
     }
   ]
 }

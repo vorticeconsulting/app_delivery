@@ -66,7 +66,7 @@ export function Home() {
           </div>
         </div>
 
-        {/* section image home */}
+        {/* section image banner */}
         <div className="relative">
           <div className="absolute -z-10 -top-32 -right-6 w-[450px] h-[450px] rounded-[170px] bg-yellow-500"></div>
           <img
@@ -107,6 +107,7 @@ export function Home() {
           Conheça o nosso cardápio
         </h2>
 
+        {/* botões de filtros dos produtos */}
         <div className="flex justify-center gap-4 my-20">
           <button
             className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-lg hover:bg-yellow-500 font-bold text-lg"
