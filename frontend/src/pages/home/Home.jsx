@@ -19,6 +19,8 @@ export function Home() {
     setProducts(response.data)
   }
 
+  console.log(products)
+
   function handleCategory(category) {
     setCategories(category)
   }

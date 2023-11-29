@@ -4,6 +4,7 @@ import { api } from '../../lib/axios'
 export function Dashboard() {
   const [title, setTitle] = useState('')
   const [price, setPrice] = useState('')
+  const [category, setCategory] = useState('')
   const [image, setImage] = useState(null)
 
   function handleChangeImage(event) {
@@ -24,6 +25,7 @@ export function Dashboard() {
     data.append('files', image)
     data.append('title', title)
     data.append('price', price)
+    data.append('category', category)
 
     const response = await api.post('/products', data)
     console.log(response.data)
@@ -52,6 +54,14 @@ export function Dashboard() {
             onChange={(e) => setPrice(e.target.value)}
             value={price}
             name="price"
+          />
+          <input
+            className="p-2 border border-gray-900"
+            type="text"
+            placeholder="Categoria"
+            onChange={(e) => setCategory(e.target.value)}
+            value={category}
+            name="category"
           />
           <input onChange={handleChangeImage} type="file" name="files" />
 

@@ -1,13 +1,10 @@
 import { Minus, Plus } from 'phosphor-react'
-
 export function ProductItem({ product }) {
+  const api = `http://localhost:3333/products/${product.Images[0].key}`
+
   return (
     <div className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center gap-3 w-full hover:bg-yellow-500 hover:cursor-pointer">
-      <img
-        className="w-full rounded-md"
-        src={product.image}
-        alt={product.title}
-      />
+      <img className="w-full rounded-md" src={api} alt={product.title} />
       <h2 className="text-2xl font-bold">{product.title}</h2>
       <span className="text-xl font-semibold">R$ {product.price}</span>
 

@@ -11,10 +11,11 @@ datasource db {
 }
 
 model Products {
-  id     String   @id @default(uuid())
-  title  String
-  price  Int
-  Images Images[]
+  id       String   @id @default(uuid())
+  title    String
+  price    Float
+  Images   Images[]
+  category String
 
   @@map("products")
 }

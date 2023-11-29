@@ -7,13 +7,14 @@ export class CreateProduct {
       console.log(req.file)
       console.log(req.body)
       
-      const {title, price} = req.body
+      const {title, price, category} = req.body
       const {originalname: name, filename: key, size, path} = req.file
 
       const product = await prisma.products.create({
         data: {
           title,
           price : Number(price),
+          category,
           Images: {
             create: {
               key ,
