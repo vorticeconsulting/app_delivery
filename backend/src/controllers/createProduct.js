@@ -3,10 +3,6 @@ import {prisma} from '../database/prismaClient.js'
 export class CreateProduct {
   async handle(req, res) {
     try {
-
-      console.log(req.file)
-      console.log(req.body)
-      
       const {title, price, category} = req.body
       const {originalname: name, filename: key, size, path} = req.file
 

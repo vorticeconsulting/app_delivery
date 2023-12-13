@@ -112,19 +112,19 @@ export function Home() {
         {/* botões de filtros dos produtos */}
         <div className="flex justify-center gap-4 my-20">
           <button
-            className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-lg hover:bg-yellow-500 font-bold text-lg"
+            className="focus:bg-yellow-500 flex items-center gap-2 p-4 bg-white rounded-lg shadow-lg hover:bg-yellow-500 font-bold text-lg"
             onClick={() => handleCategory('hamburguer')}
           >
             <Hamburger size={24} /> Hamburguer
           </button>
           <button
-            className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-lg hover:bg-yellow-500 font-bold text-lg"
+            className="focus:bg-yellow-500 flex items-center gap-2 p-4 bg-white rounded-lg shadow-lg hover:bg-yellow-500 font-bold text-lg"
             onClick={() => handleCategory('massas')}
           >
             <Pizza size={24} /> Pizza
           </button>
           <button
-            className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-lg hover:bg-yellow-500 font-bold text-lg"
+            className="focus:bg-yellow-500 flex items-center gap-2 p-4 bg-white rounded-lg shadow-lg hover:bg-yellow-500 font-bold text-lg"
             onClick={() => handleCategory('bebida')}
           >
             <BeerBottle size={24} /> Bebidas
