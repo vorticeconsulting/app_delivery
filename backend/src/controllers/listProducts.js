@@ -3,7 +3,6 @@ import {prisma} from '../database/prismaClient.js'
 export class ListProducts {
   async handle(req, res) {
     try {
-      
       const products = await prisma.products.findMany({
         include: {
           Images: true
