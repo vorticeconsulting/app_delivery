@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 import { FaPhone } from 'react-icons/fa'
 
-import burguer from '../../assets/burguer.png'
+import burger from '../../assets/burguer.png'
 import { Service } from '../../components/Services'
 import { LinksRedesSocial } from '../../components/LinksRedesSocial'
 import { useState, useEffect } from 'react'
@@ -12,7 +12,7 @@ import { BeerBottle, Hamburger, Pizza } from 'phosphor-react'
 
 export function Home() {
   const [products, setProducts] = useState([])
-  const [categories, setCategories] = useState('hamburguer')
+  const [categories, setCategories] = useState('hamburger')
 
   async function fetchProducts() {
     const response = await api.get('/products')
@@ -73,7 +73,7 @@ export function Home() {
           <div className="absolute -z-10 -top-32 -right-6 w-[450px] h-[450px] rounded-[170px] bg-yellow-500"></div>
           <img
             className="z-50 w-[550px]"
-            src={burguer}
+            src={burger}
             alt="Imagem ilustrativa de uma Hamburguer"
           />
           <div className="absolute -bottom-4 -right-6 bg-white rounded-xl shadow-xl p-4 w-[330px]">
